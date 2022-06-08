@@ -1,12 +1,12 @@
 #include <unistd.h>
 #include "main.h"
 /**
- *print_alphabet - Function write alphabet
+ *print_alphabet_x10 - Function write alphabet
  *
  *Return: Nothing
  *
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	char a;
 	int i;
