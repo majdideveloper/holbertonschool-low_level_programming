@@ -19,7 +19,6 @@ int _abs(int number)
 	}
 	else
 	{
-		_putchar('0');
 		return (0);
 	}
 }
