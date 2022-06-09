@@ -14,8 +14,8 @@ int _abs(int number)
 	}
 	else if (number < 0)
 	{
-		number = number * -1;
-		return (-1);
+		number = number * (-1);
+		return (number);
 	}
 	else
 	{
