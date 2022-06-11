@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *fizz_buzz - Function
+ *main - fizz_buzz - Function
  */
-void fizz_buzz(void)
+int main(void)
 {
 int i;
 
@@ -29,4 +29,5 @@ for (i = 1; i < 101; i++)
 
 
 }
+return (0);
 }
