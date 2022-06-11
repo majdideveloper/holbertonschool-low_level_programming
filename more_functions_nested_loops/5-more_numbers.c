@@ -7,6 +7,7 @@ void more_numbers(void)
 {
 int i;
 int j;
+int count;
 
 
 for (i = 0; i < 10; i++)
@@ -17,14 +18,12 @@ for (i = 0; i < 10; i++)
 		{
 			_putchar('1');
 		}
-		if (j <= 9)
+		count = j;
+		if (j > 9)
 		{
-			_putchar(j + '0');
+			count = j - 9;
 		}
-		else
-		{
-			_putchar((j - 9) + '0');
-		}
+		_putchar(count + '0');
 	}
 _putchar('\n');
 }
