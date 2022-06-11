@@ -17,7 +17,7 @@ if (size > 0)
 		}
 		for (q = 1; q <= i; q++)
 		{
-		_putchar('*');
+		_putchar('#');
 		}
 		_putchar('\n');
 }
