@@ -14,13 +14,10 @@ for (i = 0; i < 10; i++)
 {
 	for (j = 0; j <= 14; j++)
 	{
-		if (j > 9)
-		{
-			_putchar('1');
-		}
 		count = j;
 		if (j > 9)
 		{
+			_putchar('1');
 			count = j - 10;
 		}
 		_putchar(count + '0');
