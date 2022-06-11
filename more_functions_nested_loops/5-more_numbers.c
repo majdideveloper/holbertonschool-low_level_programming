@@ -21,7 +21,7 @@ for (i = 0; i < 10; i++)
 		count = j;
 		if (j > 9)
 		{
-			count = j - 9;
+			count = j - 10;
 		}
 		_putchar(count + '0');
 	}
