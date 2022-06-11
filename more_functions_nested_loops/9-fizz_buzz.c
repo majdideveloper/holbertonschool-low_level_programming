@@ -3,6 +3,7 @@
 
 /**
  *main - fizz_buzz - Function
+ *Return: 0
  */
 int main(void)
 {
@@ -29,5 +30,6 @@ for (i = 1; i < 101; i++)
 
 
 }
+printf("\n");
 return (0);
 }
