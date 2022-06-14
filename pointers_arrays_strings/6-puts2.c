@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  *puts2 - Function
  *@str: a pointer to char
@@ -7,16 +8,14 @@
  */
 void puts2(char *str)
 {
-int i = 0;
+	int i, len;
 
-	while (str[i] != '\0')
+	len = strlen(str);
+	for (i = 0; i < len; i++)
 	{
-		if ((str[i] % 2) == 0)
-		{
-			_putchar(*(str + i));
-		}
-		i++;
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
-_putchar('\n');
+	_putchar('\n');
 }
 
