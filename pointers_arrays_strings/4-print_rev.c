@@ -18,5 +18,5 @@ int j;
 	{
 		_putchar(s[j]);
 	}
-
+_putchar('\n');
 }
