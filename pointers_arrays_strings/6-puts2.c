@@ -1,17 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *print_rev - Function
- *@s: a pointer to char
+ *puts2 - Function
+ *@str: a pointer to char
  *Return: Nothing
  */
-void print_rev(char *s)
+void puts2(char *str)
 {
 int i = 0;
 
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 		i++;
 	}
 _putchar('\n');
