@@ -1,26 +1,19 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 /**
- *puts2-0 Function
- *@str: a pointer to char
+ *print_rev - Function
+ *@s: a pointer to char
  *Return: Nothing
  */
-void puts2(char *str)
+void print_rev(char *s)
 {
-	int i;
-	int j;
-	char c;
+int i = 0;
 
-	j = strlen(str);
-	for (i = 0, j -= 1; i < j; i++, j--)
+	while (s[i] != '\0')
 	{
-		c = str[i];
-		str[i] = str[j];
-		str[j] = c;
-
+		_putchar(s[i]);
+		i++;
 	}
-
-
-
+_putchar('\n');
 }
+
