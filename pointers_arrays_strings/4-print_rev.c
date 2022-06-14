@@ -13,8 +13,7 @@ int j;
 	while (*s != '\0')
 	{
 		i++;
-		s++;
 	}
-	for (j = i; i >= 0; i--)
-		printf("%c", *(s + j));
+	for (j = i; j >= 0; j--)
+		_putchar(s[j]);
 }
