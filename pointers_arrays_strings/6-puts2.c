@@ -2,22 +2,22 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *rev_string- Function
- *@s: a pointer to char
+ *puts2-0 Function
+ *@str: a pointer to char
  *Return: Nothing
  */
-void rev_string(char *s)
+void puts2(char *str)
 {
 	int i;
 	int j;
 	char c;
 
-	j = strlen(s);
+	j = strlen(str);
 	for (i = 0, j -= 1; i < j; i++, j--)
 	{
-		c = s[i];
-		s[i] = s[j];
-		s[j] = c;
+		c = str[i];
+		str[i] = str[j];
+		str[j] = c;
 
 	}
 
