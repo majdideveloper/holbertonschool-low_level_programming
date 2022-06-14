@@ -7,10 +7,6 @@
  */
 void _puts(char *s)
 {
+puts(s);
 
-	while (*s != '\0')
-	{
-		puts(s);
-		s++;
-	}
 }
