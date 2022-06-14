@@ -11,6 +11,5 @@ void _puts(char *s)
 	while (*s != '\0')
 	{
 		puts(s);
-		s++;
 	}
 }
