@@ -14,6 +14,7 @@ char *_strcat(char *dest, char *src)
 	sen = dest + strlen(dest);
 	while (*src == '\0')
 		*sen++ = *src++;
+	*sen = '\0';
 	return (dest);
 }
 
