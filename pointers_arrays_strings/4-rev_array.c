@@ -9,12 +9,15 @@
  */
 void reverse_array(int *a, int n)
 {
-int i;
-const int size = sizeof(a);
-int rev[size];
+int i, aux;
 
-for (i = 0; i < n; i++)
-	rev[n - 1 - i] = a[i];
-for (i = 0; i < n; i++)
-	a[i] = rev[i];
+for (i = 0; i < n / 2; i++)
+{
+	aux = a[i];
+	a[i] = a[n - 1 - i];
+	a[n - 1 - i] = aux;
+
+
+}
+
 }
