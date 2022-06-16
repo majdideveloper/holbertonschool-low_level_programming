@@ -14,11 +14,14 @@ char *_strncat(char *dest, char *src, int n)
 	int i = 0;
 
 	sen = dest + strlen(dest);
+	if (src == NULL)
+		src = "\0";
 	while (n != i)
 	{
 		*sen++ = *src++;
 		i++;
 	}
+
 
 	return (dest);
 }
