@@ -20,6 +20,5 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 
-	*sen = '\0';
-	return (dest);
+	return (sen);
 }
