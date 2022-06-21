@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 /**
  *_puts_recursion - Function use puts and recursion to display String
  *@s: a pointer to char
@@ -26,8 +21,4 @@ void _puts_recursion(char *s)
 }
 
 
-int main(void)
-{
-	_puts_recursion("Puts with recursion");
-	return (0);
-}
+
