@@ -1,6 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * validateInt - function validate int
+ *@B : pointer of char
+ *Return: int value
+ */
+
+
+int validateInt(char *B)
+{
+	int i;
+
+	for (i = 0; B[i] != 0; i++)
+	{
+		if (!(B[i] >= 48 && B[i] <= 57))
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
+/**
  * main - the main function
  *@argc : number of arg
  *@argv : list of String arg
@@ -8,7 +28,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, validate, sum = 0;
 
 	if (argc == 1)
 		printf("0\n");
@@ -16,7 +36,8 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc ; i++)
 		{
-			if (atoi(argv[i]) == 0)
+			validate = validateInt(argv[i]);
+			if (validate == 0)
 			{
 				printf("Error\n");
 				return (1);
@@ -26,7 +47,7 @@ int main(int argc, char *argv[])
 				sum += atoi(argv[i]);
 			}
 		}
-	printf("%d\n", sum);
+		printf("%d\n", sum);
 	}
 	return (0);
 }
