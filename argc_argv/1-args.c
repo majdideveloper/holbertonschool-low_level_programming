@@ -7,9 +7,9 @@
  */
 int main(int argc, char *argv[])
 {
-	argc += 0;
 	int count = 0;
 
+	argc += 0;
 	while (argv[count] != NULL)
 	{
 		++count;
