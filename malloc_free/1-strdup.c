@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-int i;
+unsigned long i;
 char *sen;
 
 
@@ -16,8 +16,8 @@ char *sen;
 		return (NULL);
 
 
-	sen = malloc(sizeof(char) * strlen(str) + 1);
-	for (i = 0; i < strlen(str) + 1; i++)
+	sen = malloc(sizeof(char) * (strlen(str) + 1));
+	for (i = 0; i < (strlen(str) + 1); i++)
 		sen[i] = str[i];
 	return (sen);
 
