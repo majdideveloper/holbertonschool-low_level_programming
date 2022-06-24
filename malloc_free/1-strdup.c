@@ -17,6 +17,8 @@ char *sen;
 
 
 	sen = malloc(sizeof(char) * (strlen(str) + 1));
+	if (sen == NULL)
+		return (NULL);
 	for (i = 0; i < (strlen(str) + 1); i++)
 		sen[i] = str[i];
 	return (sen);
