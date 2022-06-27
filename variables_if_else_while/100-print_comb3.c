@@ -20,12 +20,12 @@ int main(void)
 
 		putchar(a + '0');
 		putchar(b + '0');
-		if (a != 8 || b !=9)
+		if (a != 8 || b != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		if ( b == 9)
+		if  (b == 9)
 		{
 			++a;
 			b = b -	(b - a);
