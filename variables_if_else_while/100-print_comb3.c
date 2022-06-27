@@ -15,7 +15,7 @@ int main(void)
 
 	a = 0;
 	b = 1;
-	while (a != 9 )
+	while (a != 9)
 	{
 
 		putchar(a + '0');
@@ -28,7 +28,7 @@ int main(void)
 		if ( b == 9)
 		{
 			++a;
-			b = b -(b- a);
+			b = b -	(b - a);
 		}
 
 
