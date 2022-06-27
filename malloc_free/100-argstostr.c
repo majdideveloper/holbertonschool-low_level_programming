@@ -11,7 +11,7 @@ char *argstostr(int ac, char **av)
 {
 
 	int i;
-	char *newStr = malloc(ac * (sizeof(char) + 51));
+	char *newStr = malloc(ac);
 
 	if (ac == 0)
 		return (NULL);
