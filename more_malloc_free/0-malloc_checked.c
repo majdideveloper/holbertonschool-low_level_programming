@@ -4,11 +4,14 @@
 /**
  *malloc_checked - fun list args
  *@b : unsigned int
- *Return : Nothing
+ *Return : pointer
  */
 void *malloc_checked(unsigned int b)
 {
 	void *p;
-p =  malloc(b);
-return (p);
+
+	p =  malloc(b);
+	if (p == 0)
+		return(98);
+	return (p);
 }
