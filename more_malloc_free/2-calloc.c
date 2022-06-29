@@ -16,11 +16,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return(NULL);
 	sum = nmemb * size;
-	arr= malloc(sum);
-	if (arr == NULL)
+	array= malloc(sum);
+	if (array == NULL)
 		return (NULL);
 
-	array = arr;
+	array = arr	;
 	for (i = 0; i <= sum; i++)
 		arr[i] = 0;
 	return(array);
