@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	arr = array;
-	for (i = 0; i <= sum; i++)
+	for (i = 0; i < sum; i++)
 		arr[i] = 0;
 	return (array);
 
