@@ -9,6 +9,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 
+	void *array;
 	char *arr;
 	int sum, i;
 
@@ -18,9 +19,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arr= malloc(sum);
 	if (arr == NULL)
 		return (NULL);
+
+	array = arr;
 	for (i = 0; i <= sum; i++)
 		arr[i] = 0;
-	return(arr);
+	return(array);
 
 }
 
