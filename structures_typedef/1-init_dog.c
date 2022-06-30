@@ -3,9 +3,9 @@
 /**
  *init_dog - Function init value of struct dog
  *@d: pointer to struct dog
- *@name: pointer to char 
- *@age: float 
- *@owner: pointer to char 
+ *@name: pointer to char
+ *@age: float
+ *@owner: pointer to char
  *Return: Nothing
  *
  */
