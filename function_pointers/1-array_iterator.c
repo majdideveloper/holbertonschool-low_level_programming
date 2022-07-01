@@ -9,7 +9,7 @@
  *Return: 0
  *
  */
- void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
@@ -17,7 +17,6 @@
 		return;
 	if (!action)
 		return;
-	for (i = 0; i < size; i++ )
+	for (i = 0; i < size; i++)
 		action(array[i]);
-	
 }
