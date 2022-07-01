@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "function_pointers.h"
 /**
  *array_iterator - Fun
@@ -16,9 +15,9 @@
 
 	if (!array)
 		return;
-	if(!action)
+	if (!action)
 		return;
-	for (i = 0; i < size; i++ ){
+	for (i = 0; i < size; i++ )
 		action(array[i]);
-	}
+	
 }
