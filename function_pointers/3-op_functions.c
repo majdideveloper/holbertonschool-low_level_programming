@@ -4,7 +4,7 @@
  *op_add - Fun returns the sum of a and b
  *@a: int a
  *@b: int b
- *Return: int the result 
+ *Return: int the result
  *
  */
 int op_add(int a, int b)
@@ -15,7 +15,7 @@ int op_add(int a, int b)
  *op_sub - Fun returns the sum of a and b
  *@a: int a 
  *@b: int b
- *Return: int the result 
+ *Return: int the result
  *
  */
 int op_sub(int a, int b)
@@ -37,7 +37,7 @@ int op_mul(int a, int b)
  *op_div - Fun returns the sum of a and b
  *@a: int a
  *@b: int b
- *Return: int the result 
+ *Return: int the result
  *
  */
 int op_div(int a, int b)
@@ -48,7 +48,7 @@ int op_div(int a, int b)
  *op_mod - Fun returns the sum of a and b
  *@a: int a
  *@b: int b
- *Return: int the result 
+ *Return: int the result
  *
  */
 int op_mod(int a, int b)
