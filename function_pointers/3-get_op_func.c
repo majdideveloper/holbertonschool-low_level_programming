@@ -3,11 +3,9 @@
 #include <string.h>
 #include "3-calc.h"
 /**
- *array_iterator - Fun
- *@array: pointer to int
- *@size: size_t
- *@action: function
- *Return: 0
+ *get_op_func - Fun
+ *@s: pointer to char
+ *Return: int
  *
  */
 int(*get_op_func(char *s))(int, int)

@@ -13,7 +13,7 @@ int op_add(int a, int b)
 }
 /**
  *op_sub - Fun returns the sum of a and b
- *@a: int a 
+ *@a: int a
  *@b: int b
  *Return: int the result
  *
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
  *op_mul - Fun returns the sum of a and b
  *@a: int a
  *@b: int b
- *Return: int the result 
+ *Return: int the result
  *
  */
 int op_mul(int a, int b)
