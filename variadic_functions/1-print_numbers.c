@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 /**
  *sum_them_all - FUN return sum all argument
  *@n: const unsigned int
