@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- *sum_them_all - FUN return sum all argument
+ *print_numbers - FUN return sum all argument
+ *@separator: const unsigned int
  *@n: const unsigned int
- *Return : sum int
- *
+ *Return: Nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
