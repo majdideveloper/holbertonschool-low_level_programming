@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- *print_numbers - FUN return sum all argument
+ *print_strings - FUN return sum all argument
  *@separator: const unsigned int
  *@n: const unsigned int
  *Return: Nothing
@@ -22,8 +22,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		str = va_arg(ap, char *);
-		if (str == NULL )
-			printf( "(nil)");
+		if (str == NULL)
+			printf("(nil)");
 		else
 			printf("%s", str);
 		if ((separator != NULL) && (i != (n - 1)))
