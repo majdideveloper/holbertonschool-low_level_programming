@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- *print_char - FUN 
+ *print_char - FUN
  *@arg: va_list
  *Return: Nothing
  */
@@ -15,7 +15,7 @@ void print_char(va_list arg)
 	printf("%c", c);
 }
 /**
- *print_int - FUN 
+ *print_int - FUN
  *@arg: va_list
  *Return: Nothing
  */
@@ -27,7 +27,7 @@ void print_int(va_list arg)
 	printf("%d", n);
 }
 /**
- *print_float - FUN 
+ *print_float - FUN
  *@arg: va_list
  *Return: Nothing
  */
@@ -39,7 +39,7 @@ void print_float(va_list arg)
 	printf("%f", c);
 }
 /**
- *print_string - FUN 
+ *print_string - FUN
  *@arg: va_list
  *Return: Nothing
  */
@@ -79,10 +79,10 @@ void print_all(const char * const format, ...)
 	sep = "";
 
 	va_start(args, format);
-	while(format != NULL && format[i])
+	while (format != NULL && format[i])
 	{
 		j = 0;
-		while(j < 4 && format[i] != *(s[j].op))
+		while (j < 4 && format[i] != *(s[j].op))
 			j++;
 		if (j < 4)
 		{
@@ -92,14 +92,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	
-
-
-
-
-
-
-
 	printf("\n");
 	va_end(args);                  /* Clean up. */
 }
