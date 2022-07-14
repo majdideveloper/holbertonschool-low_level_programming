@@ -8,10 +8,11 @@
 
 
 
-typedef struct list {
-	char *str;
-    int len;
-    struct list* next;
+typedef struct list
+{
+char* str;
+int len;
+struct list* next;
 } list_t;
 
 
