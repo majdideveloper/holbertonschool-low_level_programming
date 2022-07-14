@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_listint - print a list of linked list
+ *listint_len- print a list of linked list
  * @h: pointer to linked list
  *
  * Return: size_t
