@@ -3,9 +3,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *add_node_end - add other item to  linked list
+ *add_nodeint_end - add other item to  linked list
  *@head: pointer to linked list
- *@str: pointer to string to add
+ *@n: int to add
  * Return: list_t new linked-list
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
