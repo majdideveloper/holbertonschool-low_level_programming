@@ -10,19 +10,20 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t  *newItem,*ptr;
+	list_t  *newItem, *ptr;
 
 	newItem = (struct list *)malloc(sizeof(struct list));
+	if (!newItem)
+		return (NULL);
 	newItem->str = strdup(str);
 	newItem->len = strlen(str);
 	newItem->next = NULL;
-
 	if (*head == NULL)
 		*head = newItem;
 	else 
 	{
 		ptr = *head;
-		while(ptr->next != NULL)
+		while (ptr->next != NULL)
 		{
 			ptr = ptr->next;
 
