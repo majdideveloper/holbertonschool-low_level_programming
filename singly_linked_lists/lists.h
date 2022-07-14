@@ -15,10 +15,11 @@
  * Description: singly linked list node structure
  */
 
-typedef struct list {
-	char *str;
-    int len;
-    struct list *next;
+typedef struct list
+{
+char *str;
+int len;
+struct list *next;
 } list_t;
 
 
