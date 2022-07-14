@@ -10,9 +10,9 @@
 
 typedef struct list
 {
-char* str;
+char *str;
 int len;
-struct list* next;
+struct list *next;
 } list_t;
 
 

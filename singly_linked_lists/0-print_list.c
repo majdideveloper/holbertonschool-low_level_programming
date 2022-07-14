@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * print_list - print a list of linked list
- * @list_t: pointer to linked list
+ * @h: pointer to linked list
  *
  * Return: size_t
  */
