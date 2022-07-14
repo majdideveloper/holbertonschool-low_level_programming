@@ -14,9 +14,8 @@ struct list *newItem;
 
 newItem = (struct list *)malloc(sizeof(struct list));
 if (newItem == NULL)
-	 return (NULL);
-  
-newItem->str = strdup(str); 
+	return (NULL);
+newItem->str = strdup(str);
 newItem->len = strlen(str);
 newItem->next = *head;
 *head = newItem;
