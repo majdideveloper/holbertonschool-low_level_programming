@@ -24,9 +24,9 @@ unsigned int binary_to_uint(const char *b)
 	bin = atoi(b);
 	 while ( bin > 0)  
     {  
-        rem = bin % 10; /* divide the binary number by 10 and store the remainder in rem variable. */  
+        rem = bin % 10;   
         dec = dec + rem * base;  
-        bin= bin / 10; // divide the number with quotient  
+        bin= bin / 10;  
         base = base * 2;  
     }  
 	
