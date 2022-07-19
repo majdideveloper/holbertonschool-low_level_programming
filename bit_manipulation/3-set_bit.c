@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * get_bit - function that prints the bit of index
+ * set_bit - function that change the bit of index
  * @n: the number
  * @index: index of bit
  * Return: void
