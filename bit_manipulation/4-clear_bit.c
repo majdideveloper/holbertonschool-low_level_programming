@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_bit - function that change the bit of index
+ * clear_bit - function that clear the bit of index
  * @n: the number
  * @index: index of bit
  * Return: void
