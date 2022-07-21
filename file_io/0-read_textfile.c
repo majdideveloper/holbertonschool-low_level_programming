@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * read_textfile - function that read a text file
- * it to the POSIX 
- * @filename: file name 
+ * it to the POSIX
+ * @filename: file name
  * @letters: number of letters in text
  * Return: number of letters it text
  */
