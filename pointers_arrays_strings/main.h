@@ -20,3 +20,4 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
+char *leet(char *s);
