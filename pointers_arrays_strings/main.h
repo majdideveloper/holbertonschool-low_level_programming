@@ -23,3 +23,4 @@ int _atoi(char *s);
 char *leet(char *s);
 char *rot13(char *s);
 void print_number(int n);
+unsigned int _strspn(char *s, char *accept);
