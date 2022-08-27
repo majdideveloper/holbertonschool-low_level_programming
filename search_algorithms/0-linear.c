@@ -1,4 +1,4 @@
-#include "search_algos.h" 
+#include "search_algos.h"
 /**
  *linear_search - function search value in array and return index this value
  *@array : pointer  to array to search in
@@ -8,9 +8,10 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i, indexValue = 0 ;
+	size_t i, indexValue = 0;
 
-	if (!array)return -1;
+	if (!array)
+		return -1;
 	for (i = 0; i < size; i++)
 	{
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
@@ -20,6 +21,7 @@ int linear_search(int *array, size_t size, int value)
 			break;
 		}
 	}
-	if (indexValue == 0) indexValue = -1;
+	if (indexValue == 0) 
+		indexValue = -1;
 	return (indexValue);
 }
