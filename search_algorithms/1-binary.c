@@ -45,7 +45,7 @@ void print_array(int *array, int firstItem, int lastItem)
 	printf("Searching in array: ");
 	for (i = firstItem; i <= lastItem; i++)
 	{
-		if (i == lastItem )
+		if (i == lastItem)
 		{
 			printf("%d\n", array[i]);
 			break;
