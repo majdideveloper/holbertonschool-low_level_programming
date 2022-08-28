@@ -4,7 +4,7 @@
  *@array : pointer  to array to search in
  *@size : size of array
  *@value : value to find in array
- *Return: int index of value if  found   
+ *Return: int index of value if  found
  *else -1
  */
 int jump_search(int *array, size_t size, int value)
