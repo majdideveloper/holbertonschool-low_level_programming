@@ -55,7 +55,8 @@ void print_array(int *array, int firstItem, int lastItem)
 
 }
 /**
- *exponential_search - function search value in array and return index this value
+ *exponential_search - function search value in array and
+ *return index this value
  *@array : pointer  to array to search in
  *@size : size of array
  *@value : value to find in array
@@ -79,10 +80,10 @@ int exponential_search(int *array, size_t size, int value)
 		low = high;
 		high *= 2;
 	}
-	if (high > size - 1)
+	if (high > (size - 1))
 		high = size -1;
 	printf("Value found between indexes [%lu] and [%lu]\n", low, high);
-	/* verfy return from binary_search */
+	/* verfy value from binary_search */
 	returnBinarySearch =  binary_search(array + low, (high - low) + 1, value);
 	if (returnBinarySearch == -1)
 		return (-1);
