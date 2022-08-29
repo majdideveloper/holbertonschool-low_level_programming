@@ -67,7 +67,7 @@ int exponential_search(int *array, size_t size, int value)
 	/* the high is the value of exponential */
 	/*and low is (exponential - 1) last exponential*/
 	size_t high, low;
-	int returnBinarySearch;
+	int valueBinarySearch;
 
 	high = 1;
 	if (!array)
@@ -81,13 +81,13 @@ int exponential_search(int *array, size_t size, int value)
 		high *= 2;
 	}
 	if (high > (size - 1))
-		high = size -1;
+		high = size - 1;
 	printf("Value found between indexes [%lu] and [%lu]\n", low, high);
 	/* verfy value from binary_search */
-	returnBinarySearch =  binary_search(array + low, (high - low) + 1, value);
-	if (returnBinarySearch == -1)
+	valueBinarySearch =  binary_search(array + low, (high - low) + 1, value);
+	if (valueBinarySearch == -1)
 		return (-1);
-	return (low + returnBinarySearch);
+	return (low + valueBinarySearch);
 
 
 
