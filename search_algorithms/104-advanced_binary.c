@@ -9,12 +9,13 @@
  */
 int search_binary_recursive(int *array, size_t low, size_t high, int value)
 {
+int middle;
+
 
 	if(low > high)
 		return(-1);
 	print_array(array, low, high);
-	size_t middle;
-
+	
 	middle = low + (high - low) / 2;
 	if (array[middle] == value &&(middle == low || array[middle - 1] != value))
 		return middle;
