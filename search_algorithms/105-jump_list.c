@@ -1,4 +1,5 @@
 #include "search_algos.h"
+listint_t *nextStep(listint_t *head,int step);
 /**
  *jump_search - function search value in array and return index this value
  *@array : pointer  to array to search in
@@ -6,8 +7,6 @@
  *@value : value to find in array
  *Return: int index of value if found else -1
  */
-listint_t *nextStep(listint_t *head,int step);
-
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
 
@@ -49,6 +48,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 listint_t *nextStep(listint_t *head, int step)
 {
 	int i = 0;
+
 	while(head->next != NULL)
 	{
 		head = head->next;
