@@ -1,8 +1,8 @@
 #include "search_algos.h"
 listint_t *nextStep(listint_t *head, int step);
 /**
- *jump_search - function search value in array and return index this value
- *@array : pointer  to array to search in
+ *jump_list - function search value in linked list and return index this value
+ *@list : pointer  to linked list to search in
  *@size : size of array
  *@value : value to find in array
  *Return: int index of value if found else -1
@@ -49,8 +49,8 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 }
 
 /**
- *nextStep - function go to next step 
- *@head : pointer  to array 
+ *nextStep - function go to next step
+ *@head : pointer  to array
  *@step : step to jump in array
  *Return: int index of value if found else -1
  */
