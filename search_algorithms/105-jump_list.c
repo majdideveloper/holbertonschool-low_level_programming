@@ -30,7 +30,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	{	
 		startIndex = endIndex ;
 		endIndex = nextStep(endIndex,step);
-	printf("Value checked at index kk [%lu] = [%d]\n", startIndex->index, startIndex->n);
+	printf("Value checked at index [%lu] = [%d]\n", startIndex->index, startIndex->n);
 
 	}
 	printf("Value checked at index [%lu] = [%d]\n", endIndex->index, endIndex->n);
