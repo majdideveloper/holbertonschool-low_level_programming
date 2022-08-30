@@ -25,7 +25,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	/*	printf("%d\n", endIndex->n);*/
 
 	while ((value > endIndex->n && size > endIndex->index) || !endIndex)
-	{	
+	{
 		startIndex = endIndex;
 		endIndex = nextStep(endIndex, step);
 		printf("Value checked at index [%lu] = [%d]\n",
@@ -48,7 +48,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 }
 
-
+/**
+ *nextStep - function go to next step 
+ *@head : pointer  to array 
+ *@step : step to jump in array
+ *Return: int index of value if found else -1
+ */
 listint_t *nextStep(listint_t *head, int step)
 {
 	int i = 0;
