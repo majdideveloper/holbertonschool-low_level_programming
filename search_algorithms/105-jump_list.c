@@ -1,5 +1,5 @@
 #include "search_algos.h"
-listint_t *nextStep(listint_t *head,int step);
+listint_t *nextStep(listint_t *head, int step);
 /**
  *jump_search - function search value in array and return index this value
  *@array : pointer  to array to search in
@@ -28,14 +28,18 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	{	
 		startIndex = endIndex;
 		endIndex = nextStep(endIndex, step);
-		printf("Value checked at index [%lu] = [%d]\n", startIndex->index, startIndex->n);
+		printf("Value checked at index [%lu] = [%d]\n",
+				startIndex->index, startIndex->n);
 
 	}
-	printf("Value checked at index [%lu] = [%d]\n", endIndex->index, endIndex->n);
-	printf("Value found between indexes [%lu] and [%lu]\n", startIndex->index, endIndex->index);
+	printf("Value checked at index [%lu] = [%d]\n",
+			endIndex->index, endIndex->n);
+	printf("Value found between indexes [%lu] and [%lu]\n",
+			startIndex->index, endIndex->index);
 	while (startIndex->next != NULL)
 	{
-		printf("Value checked at index [%lu] = [%d]\n", startIndex->index, startIndex->n);
+		printf("Value checked at index [%lu] = [%d]\n",
+				startIndex->index, startIndex->n);
 		if (startIndex->n == value)
 			return (startIndex);
 		startIndex = startIndex->next;
@@ -49,7 +53,7 @@ listint_t *nextStep(listint_t *head, int step)
 {
 	int i = 0;
 
-	while(head->next != NULL)
+	while (head->next != NULL)
 	{
 		head = head->next;
 		i++;
