@@ -1,6 +1,7 @@
 #include "search_algos.h"
 /**
- *linear_skip - function search value in linked list and return index this value
+ *linear_skip - function search value in linked list 
+ *and return index this value
  *@list : pointer  to linked list to search in
  *@value : value to find in array
  *Return: int index of value if found else NULL
@@ -15,7 +16,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 	startIndex = list;
 	endIndex = list->express;
 
-	while ((value > endIndex->n && endIndex-> express != NULL)
+	while ((value > endIndex->n && endIndex->express != NULL)
 		 || endIndex->next == NULL)
 	{
 		startIndex = endIndex;
