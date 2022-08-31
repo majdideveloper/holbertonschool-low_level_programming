@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- *linear_skip - function search value in linked list 
+ *linear_skip - function search value in linked list
  *and return index this value
  *@list : pointer  to linked list to search in
  *@value : value to find in array
