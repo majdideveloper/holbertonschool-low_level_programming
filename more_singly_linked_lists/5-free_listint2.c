@@ -3,11 +3,21 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *free_listint - free  linked list
+ *free_listint2 - free  linked list
  *@head: pointer to linked list
- *Return: list_t new linked-list
+ *Return: Nothing . .  .
  */
 void free_listint2(listint_t **head)
 {
-	free(head);	
+	listint_t  *temp1 ;
+
+	if(head == NULL)
+		return;
+	while (*head)
+	{
+		temp1 = (*head)->next;
+		free(*head);
+		*head = temp1;
+	}
+	head = NULL;
 }
