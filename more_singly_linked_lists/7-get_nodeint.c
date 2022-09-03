@@ -11,9 +11,14 @@
 {
 	listint_t *temp = head;
 
+	if (head == NULL)
+		return(NULL);
+
 	
-	while(index != 0 || temp->next == NULL)
+	while (index != 0 )
 	{
+		if (temp->next == NULL)
+			return (NULL);
 		temp = temp->next;
 		index--;
 	}
