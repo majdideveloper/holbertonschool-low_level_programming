@@ -3,21 +3,19 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *add_node_end - add other item to  linked list
+ *free_list - add other item to  linked list
  *@head: pointer to linked list
- *@str: pointer to string to add
- * Return: list_t new linked-list
+ * Return: NOTHING
  */
 void free_list(list_t *head)
 {
 
 	list_t  *temp1 = head;
-	
 
 	while(temp1 != NULL)
 	{
 		temp1 = temp1->next;
-		
+		free(head->str);
 		free(head);
 		head = temp1;
 
