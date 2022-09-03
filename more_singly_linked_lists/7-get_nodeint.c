@@ -15,7 +15,7 @@
 	if (head == NULL)
 		return (NULL);
 
-	while (index != 0 )
+	while (index != 0)
 	{
 		if (temp->next == NULL)
 			return (NULL);
