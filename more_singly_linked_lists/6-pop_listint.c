@@ -10,9 +10,9 @@
 int pop_listint(listint_t **head)
 {
 	int n;
-	listint_t *temp ;
+	listint_t *temp;
 
-	if (!head)
+	if (*head == NULL)
 		return (0);
 
 	temp = *head;
