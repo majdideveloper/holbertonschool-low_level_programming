@@ -10,18 +10,19 @@
  */
 void free_list(list_t *head)
 {
-	list_t  *temp1, *temp2;
+
+	list_t  *temp1 = head;
 	
-	temp1 = head;
-	while(temp1->next != NULL)
+
+	while(temp1 != NULL)
 	{
 		temp1 = temp1->next;
-		temp2 = temp1->next;
-		free(temp1);
-		temp1= temp2;
+		
+		free(head);
+		head = temp1;
+
 	}
 
-free(temp2);
 }
 
 
