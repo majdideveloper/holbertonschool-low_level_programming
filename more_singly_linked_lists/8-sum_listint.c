@@ -5,9 +5,9 @@
 /**
  *sum_listint - calcul sum of item linked list
  *@head: pointer to linked list
- * Return: int sum 
+ * Return: int sum
  */
-	int sum_listint(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	listint_t *temp = head;
 	int sum = 0;
@@ -16,10 +16,9 @@
 		return (0);
 
 	while (temp->next != NULL)
-	{
+	{	
 		temp = temp->next;
 		sum += temp->n;
-		
 	}
 	return (sum);
 }
